@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GDLive</title>
+
+    <script src="/js/landing.js" defer></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Grandstander:wght@500&display=swap" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="/images/Logo.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"> GDLive
+        </a>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 center-image d-none d-md-block">
+                <img src="/images/GD2.png" alt="brandLogo">
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-8">
+                <h2>Looking for a plateform to improve your COMMUNICATION SKILL?</h2>
+                <p style="font-family: 'Comfortaa', cursive">
+                    Do not worry. Use our free video calling app and Make GD to your friends that will increase your communication skill :)
+                </p>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Create Room</h5>
+                                <p class="card-text">Dont have a meeting room yet! why waiting... </p>
+                                <button type="button" class="btn btn-primary" id="Meet_Now" onclick="Meetnow()">Create a Room</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-8 col-sm-7">
+                        <div class="card mx-auto">
+                            <div class="card-body">
+                                <h5 class="card-title">Join a Meeting</h5>
+                                <p class="card-text">Someone already created a room. Why waiting?</p>
+                                <label for="inp_Join">Enter Room Id</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" id="inp_Join" placeholder="Enter the Room ID">
+                                </div>
+                                <button type="button" class="btn btn-success" id="Meet_Now" onclick="Join()">Enter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer fixed-bottom mt-auto">
+        <div class="container" style="text-align: center;">
+            <span class="text-muted">Developed Purely for Fun to encourage you.</span>
+            <span class="d-none d-md-block">
+                <a href="mailto:anamikasoni367@gmail.com"><b>Presented by</b>Anamika</a> &nbsp and
+                <a href="mailto:vermadeji513@gmail.com">Deji</a>
+            </span>
+        </div>
+    </footer>
+</body>
